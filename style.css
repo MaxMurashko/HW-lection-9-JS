@@ -1,0 +1,4 @@
+table thead [data-sort] {
+    background: rgb(66, 66, 228);
+    cursor: pointer;
+}
