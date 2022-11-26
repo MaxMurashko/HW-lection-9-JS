@@ -37,7 +37,7 @@ document.querySelector(".content h3").after(createDiv);
 
 function renderCountries(storage) {
     htmlStr = storage.reduce((acc, country) => {
-        return acc + `<tr>
+        return acc + `<tr class="text-center">
             <td>${country.name}</td>
             <td>${country.area}</td>
             <td>${country.region}</td>
