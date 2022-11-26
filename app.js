@@ -138,4 +138,4 @@ function clearInput() {
         getCountries();
     }
 }
-getCountries()
+getCountries();
