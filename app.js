@@ -52,7 +52,7 @@ function getCountries() {
     fetch('https://restcountries.com/v2/all')
     .then(res => res.json())
     .then(data => {
-        const filteredData = data.map(function(el){
+        const filteredData = data.map((el) => {
             return {
                 name: el.name,
                 population: el.population,
@@ -61,7 +61,6 @@ function getCountries() {
             }
         });
         storage.setCountriesBackup(filteredData);
-        
         renderCountries(filteredData);
         
         document.querySelector("table thead").onclick = e => {
