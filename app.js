@@ -1,4 +1,4 @@
-function countriesStorage() {
+const countriesStorage = () => {
     let countries = [];
     return {
         setCountriesBackup : newCountries => countries = newCountries,
